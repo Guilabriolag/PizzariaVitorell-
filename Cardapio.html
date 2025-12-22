@@ -2,9 +2,9 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Cardápio Vitorelli</title>
+  <title>Pizzaria Vitorelli - Cardápio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="Cardapio.css">
 </head>
 <body>
 
@@ -32,7 +32,7 @@
   <section id="carrinho">
     <span class="fechar" onclick="toggleCarrinho()">X</span>
     <h2>Resumo do Pedido</h2>
-    <textarea id="pedido" placeholder="Itens selecionados..."></textarea>
+    <textarea id="pedido" placeholder="Itens selecionados..." readonly></textarea>
     
     <div class="botoes-opcao">
       <button onclick="mostrarDados('retirar')">Retirar</button>
@@ -52,7 +52,7 @@
           <option value="Parque das Avencas">PARQUE DAS AVENCAS - R$ 3,00</option>
           <option value="Paiol/KM 50">PAIOL / KM 50 - R$ 7,00</option>
           <option value="Trailer Club Gaivota">TRAILER CLUB GAIVOTA - R$ 10,00</option>
-          <option value="Vila Nova">VILA Nova - R$ 3,00</option>
+          <option value="Vila Nova">VILA NOVA - R$ 3,00</option>
         </select>
       </div>
 
@@ -69,7 +69,7 @@
           <option value="Sim">Sim</option>
           <option value="Não">Não</option>
         </select>
-        <input type="text" id="valorTroco" placeholder="Troco para quanto?" style="display:none;">
+        <input type="text" id="valorTroco" placeholder="Troco para quanto?">
       </div>
 
       <button id="enviar" onclick="enviarPedido()">Enviar Pedido</button>
@@ -84,6 +84,6 @@
     </div>
   </div>
 
-  <script src="script.js"></script>
+  <script src="Cardapio.js"></script>
 </body>
 </html>
