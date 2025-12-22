@@ -53,7 +53,6 @@
     .logo-main {
       width: 180px;
       max-width: 60vw;
-      /* Mantendo o formato original da logo */
       filter: drop-shadow(0 0 20px rgba(197, 160, 89, 0.4));
       animation: logoEntrance 1.5s ease-out;
     }
@@ -131,15 +130,16 @@
     }
 
     .btn {
-      padding: 15px 25px;
+      padding: 18px 25px; /* Botões maiores para facilitar o clique no celular */
       border-radius: 12px;
       text-decoration: none;
       font-weight: 700;
-      font-size: 0.85rem;
+      font-size: 0.9rem;
       text-transform: uppercase;
       letter-spacing: 1px;
       transition: all 0.3s;
       cursor: pointer;
+      display: block;
     }
 
     .btn-primary {
@@ -182,7 +182,6 @@
       z-index: 0;
       animation: float 10s infinite alternate;
     }
-
   </style>
 </head>
 <body>
@@ -208,41 +207,41 @@
     </p>
     
     <div class="actions">
-      <a href="https://guilabriolag.github.io/VITORELLI/cardapio.html" class="btn btn-primary">Ver o Cardápio</a>
-      <a href="https://wa.me/5511993407322?text=Olá! Gostaria de informações sobre o retorno em Janeiro." target="_blank" class="btn btn-secondary">Falar com Atendente</a>
+      <a href="Cardapio.html" class="btn btn-primary">Ver o Cardápio</a>
+      <a href="https://wa.me/5511993407322?text=Olá! Gostaria de informações sobre o retorno em Janeiro." target="_blank" class="btn btn-secondary">Falar no WhatsApp</a>
     </div>
   </div>
 
   <script>
     window.onload = function() {
-      // Tempo para apreciação da logo e mensagem de Boas Festas
+      // Tempo de espera (4 segundos) para mostrar a logo antes do modal
       setTimeout(() => {
         const splash = document.getElementById('splash-core');
         const modal = document.getElementById('recesso-modal');
         
-        // Esmaece o splash e sobe a logo levemente para dar espaço ao modal
+        // Efeito visual de transição
         splash.style.opacity = '0.3';
         splash.style.transform = 'scale(0.9) translateY(-100px)';
         splash.style.filter = 'blur(4px)';
         
-        // Ativa o modal
         setTimeout(() => {
           modal.classList.add('show');
         }, 400);
 
-      }, 4000); // 4 segundos de splash puro
+      }, 4000); 
     };
 
-    // Animação simples de flutuação para o bokeh
+    // Animação bokeh
     function animateBokeh() {
       const bokehs = document.querySelectorAll('.bokeh');
       bokehs.forEach(el => {
-        let x = Math.random() * 50;
-        let y = Math.random() * 50;
+        let x = (Math.random() - 0.5) * 100;
+        let y = (Math.random() - 0.5) * 100;
+        el.style.transition = "transform 10s linear";
         el.style.transform = `translate(${x}px, ${y}px)`;
       });
     }
-    setInterval(animateBokeh, 5000);
+    setInterval(animateBokeh, 10000);
   </script>
 
 </body>
