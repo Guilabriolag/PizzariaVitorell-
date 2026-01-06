@@ -1,37 +1,50 @@
 const sabores = [
-    { n: "4 Queijos", d: "molho, mussarela, parmesão, provolone, gorgonzola, azeitona e orégano", g: 47, b: 37 },
-    { n: "5 Queijos", d: "molho, mussarela, parmesão, provolone, gorgonzola, catupiry, azeitona e orégano", g: 49, b: 39 },
-    { n: "Abobrinha I", d: "molho, mussarela, abobrinha, alho frito, azeitona e orégano", g: 41, b: 34 },
-    { n: "Abobrinha II", d: "molho, mussarela, abobrinha, pimenta calabresa, azeitona e orégano", g: 41, b: 34 },
-    { n: "Alho", d: "molho, mussarela, alho frito, azeitona e orégano", g: 45, b: 35 },
-    { n: "Aliche", d: "molho, mussarela, aliche, tomate, azeitona e orégano", g: 49, b: 39 },
-    { n: "Americana", d: "molho, mussarela, lombinho, pimentão, champignon, tomate cereja, azeitona sem caroço e orégano", g: 50, b: 40 },
-    { n: "Atum I", d: "molho, atum, cebola, azeitona e orégano", g: 46, b: 36 },
-    { n: "Atum I (com mussarela)", d: "molho, mussarela, atum, cebola, azeitona e orégano", g: 48, b: 38 },
-    { n: "Bacon", d: "molho, mussarela, bacon, azeitona e orégano", g: 44, b: 34 },
-    { n: "Brócolis", d: "molho, brócolis, mussarela, bacon, azeitona e orégano", g: 47, b: 38 },
-    { n: "Calabresa I", d: "molho, calabresa, tomate, cebola, azeitona e orégano", g: 38, b: 29 },
-    { n: "Calabresa II", d: "molho, mussarela, calabresa, cebola, azeitona e orégano", g: 43, b: 34 },
-    { n: "Frango Catupiry", d: "molho, frango, catupiry, azeitona e orégano", g: 47, b: 37 },
-    { n: "Gênova", d: "molho, mussarela, provolone, presunto, molho pesto e azeitona", g: 48, b: 37 },
-    { n: "Lombinho", d: "molho, mussarela, lombinho, provolone, azeitona e orégano", g: 46, b: 36 },
-    { n: "Marguerita", d: "molho, mussarela, parmesão, tomate, azeitona e manjericão", g: 40, b: 30 },
-    { n: "Mussarela", d: "molho, mussarela, tomate, azeitona e orégano", g: 38, b: 29 },
-    { n: "Peperonni", d: "molho, mussarela, peperonni e azeitona", g: 49, b: 39 },
-    { n: "Pomodoro", d: "molho, parmesão, alho frito, tomate e orégano", g: 44, b: 34 },
-    { n: "Potatosa", d: "molho, batata, parmesão, calabresa, catupiry, azeitona sem caroço e orégano", g: 45, b: 35 },
-    { n: "Portuguesa", d: "molho, mussarela, presunto, ovo cozido, ervilha, tomate, azeitona sem caroço e orégano", g: 50, b: 40 },
-    { n: "Rúcula e Tomate Seco", d: "molho, mussarela, rúcula, tomate seco, azeitona e orégano", g: 46, b: 36 },
-    { n: "Toscana", d: "molho, mussarela, linguiça calabresa moída, tomate, azeitona e orégano", g: 45, b: 35 },
-    { n: "Anita e Garibaldi", d: "parmesão e goiabada", g: 45, b: 35 },
-    { n: "Banana", d: "banana, açúcar, doce de leite e canela", g: 41, b: 31 }
+    { n: "Mussarela Especial", d: "Molho, Mussarela, Tomate Seco, Parmesão e Pimenta Calabresa", g: 43, b: 33 },
+    { n: "Mussarela", d: "Molho, Mussarela, Tomate, Azeitona e Orégano", g: 39, b: 29 },
+    { n: "Mussapy", d: "Molho, Mussarela, Tomate, Catupiry, orégano e azeitona", g: 45, b: 35 },
+    { n: "Calabresa 1", d: "Molho, Calabresa, Cebola, Azeitona e Orégano", g: 39, b: 29 },
+    { n: "Calabresa 2", d: "Molho, Mussarela, calabresa, Cebola, Azeitona e Orégano", g: 44, b: 34 },
+    { n: "Calabresa 3", d: "Molho, Calabresa, Pimentão, parmesão, Azeitona e Orégano", g: 43, b: 33 },
+    { n: "Calapy", d: "Molho, Catupiry, Calabresa, Cebola, Azeitona e Orégano", g: 44, b: 34 },
+    { n: "Cabrovo pepe", d: "Molho, Calabresa, Ovo, Cebola, Parmesão, Pimenta Calabresa, Azeitona e Orégano", g: 45, b: 35 },
+    { n: "Baiana", d: "Molho, Mussarela, calabresa desfiada, cebola, ovo, pimenta calabresa, azeitona e Orégano", g: 47, b: 37 },
+    { n: "Quatro Queijos", d: "Molho, Mussarela, Parmesão, Provolone e Gorgonzola", g: 48, b: 38 },
+    { n: "Cinco Queijos", d: "Molho, Mussarela, Parmesão, Provolone, Gorgonzola e Catupiry", g: 50, b: 40 },
+    { n: "Abobrinha 1", d: "Molho, Mussarela, Abobrinha, Alho Frito e Orégano", g: 41, b: 31 },
+    { n: "Abobrinha 2", d: "Molho, Mussarela, Abobrinha, Pimenta Calabresa e Orégano", g: 41, b: 31 },
+    { n: "Alho", d: "Molho, Mussarela e Alho frito", g: 45, b: 35 },
+    { n: "Aliche", d: "Molho, Mussarela, Aliche e Tomate", g: 49, b: 39 },
+    { n: "Americana", d: "Molho, Mussarela, Lombinho, Pimentão, Champignon e Tomate cereja", g: 50, b: 40 },
+    { n: "Atum 1", d: "Molho, Atum e Cebola", g: 46, b: 36 },
+    { n: "Atum 2", d: "Molho, Mussarela, Atum e Cebola", g: 48, b: 38 },
+    { n: "Bacon", d: "Molho, Mussarela e Bacon", g: 45, b: 35 },
+    { n: "Frango Catupiry", d: "Molho, Frango e Catupiry", g: 47, b: 37 },
+    { n: "Gênova", d: "Molho, Mussarela, Provolone, Presunto e Molho Pesto", g: 48, b: 38 },
+    { n: "Lombinho", d: "Molho, Mussarela, Lombinho e Provolone", g: 47, b: 37 },
+    { n: "Peperonni 1", d: "Molho, Mussarela, Peperonni e azeitona", g: 50, b: 40 },
+    { n: "Peperonni 2", d: "Molho, Mussarela, Peperonni, Catupiry, azeitona", g: 55, b: 45 },
+    { n: "Romana", d: "Molho, Mussarela, Aliche e Tomate", g: 50, b: 40 },
+    { n: "Rústica", d: "Molho, Mussarela, Parmesão, sobre molho, orégano e azeitona", g: 43, b: 33 },
+    { n: "Brócolis", d: "Molho, Brócolis, Mussarela, Bacon, azeitona e orégano", g: 48, b: 38 },
+    { n: "Brócolis 2", d: "Molho, Brócolis, Mussarela, alho, Bacon, azeitona e orégano", g: 49, b: 39 },
+    { n: "Libanese", d: "Molho, Mussarela, Zatar (tempero árabe), Tomate e azeitona", g: 41, b: 31 },
+    { n: "Banana", d: "Banana, Açúcar, Doce de leite e Canela", g: 41, b: 31 },
+    { n: "Anita e Garibaldi", d: "Parmesão, Mussarela e Goiabada", g: 45, b: 35 },
+    { n: "Ovomaltine", d: "Ovomaltine, ovomaltine Rocks", g: 55, b: 45 },
+    { n: "Marguerita", d: "Molho, Mussarela, Parmesão Tomate, Manjericão Azeitona e Orégano", g: 41, b: 31 },
+    { n: "Marguerita Pesto", d: "Molho, Mussarela, Parmesão Tomate, Molho Pesto Azeitona e Orégano", g: 42, b: 31 },
+    { n: "Marguedôro", d: "Molho, Mussarela, Parmesão, Tomate, manjericão, Azeitona, alho e Orégano", g: 42, b: 32 },
+    { n: "Palmitôsa", d: "Molho, Mussarela, Palmito, Catupiry, Azeitona e Orégano", g: 50, b: 40 },
+    { n: "Portuguesa", d: "Molho, Mussarela, presunto, ovo, ervilha, tomate, cebola e azeitona", g: 50, b: 40 },
+    { n: "Rúcula", d: "Molho, Mussarela, Rúcula e Tomate Seco", g: 47, b: 37 },
+    { n: "Toscana", d: "Molho, Mussarela, Linguiça calabresa moída e Tomate", g: 45, b: 35 }
 ];
 
 const bebidas = [
     { n: "Coca-Cola 2L", d: "Refrigerante", p: 18 },
     { n: "Coca-Cola Zero 2L", d: "Refrigerante", p: 18 },
     { n: "Guaraná Kuat 2L", d: "Refrigerante", p: 12 },
-    { n: "HEINEKEN", d: "Cerveja", p: 8 }
+    { n: "HEINEKEN (Lata)", d: "Cerveja", p: 10 }
 ];
 
 let catAtual = 'pizza';
@@ -45,7 +58,6 @@ function selecionar(c) {
     document.getElementById('btn-'+c).classList.add('active');
     
     const subnav = document.getElementById('subnav');
-    // REMOVE MEIA-MEIA SE FOR CALZONE OU BEBIDA
     if (c === 'calzone' || c === 'bebidas') {
         subnav.style.display = 'none';
         mostrar('inteira');
