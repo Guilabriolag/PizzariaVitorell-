@@ -11,7 +11,7 @@
       --gold-bright: #f3e5ab;
       --white: #ffffff;
       --bg-dark: #0d0d0d;
-      --accent: #ff3c3c; /* Vermelho Vetorelli para contraste */
+      --accent: #ff3c3c; 
     }
 
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -67,8 +67,8 @@
 
     .festas-title {
       font-family: 'Cinzel', serif;
-      font-size: 2.5rem;
-      letter-spacing: 10px;
+      font-size: 2.2rem;
+      letter-spacing: 8px;
       background: linear-gradient(to bottom, var(--gold-bright), var(--gold));
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -86,7 +86,7 @@
       background: rgba(10, 10, 10, 0.9);
       backdrop-filter: blur(25px);
       -webkit-backdrop-filter: blur(25px);
-      padding: 40px 25px;
+      padding: 35px 25px;
       border-radius: 35px;
       border: 1px solid rgba(197, 160, 89, 0.4);
       text-align: center;
@@ -94,7 +94,7 @@
       opacity: 0;
       z-index: 100;
       transition: all 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-      box-shadow: 0 25px 50px rgba(0,0,0,0.5);
+      box-shadow: 0 25px 50px rgba(0,0,0,0.8);
     }
 
     #welcome-modal.show {
@@ -108,38 +108,58 @@
       font-family: 'Montserrat', sans-serif;
       font-weight: 900;
       color: var(--white);
-      font-size: 1.8rem;
-      margin-bottom: 10px;
+      font-size: 1.6rem;
+      margin-bottom: 5px;
       letter-spacing: -1px;
     }
 
     .sub-head {
       color: var(--gold);
       font-family: 'Cinzel', serif;
-      font-size: 1.2rem;
-      margin-bottom: 25px;
+      font-size: 1rem;
+      margin-bottom: 20px;
       display: block;
+      letter-spacing: 3px;
     }
 
     .modal-body {
       font-weight: 400;
-      line-height: 1.6;
+      line-height: 1.5;
       color: #ccc;
-      margin-bottom: 35px;
-      font-size: 1.05rem;
+      margin-bottom: 30px;
+      font-size: 0.95rem;
     }
 
-    .modal-body b { color: #fff; border-bottom: 2px solid var(--accent); }
+    /* Destaques de Novos Sabores */
+    .highlight-box {
+        background: rgba(255, 60, 60, 0.1);
+        border: 1px dashed var(--accent);
+        border-radius: 15px;
+        padding: 15px;
+        margin: 15px 0;
+        text-align: left;
+    }
+
+    .highlight-item {
+        display: block;
+        font-size: 0.85rem;
+        margin-bottom: 5px;
+        color: #fff;
+    }
+
+    .highlight-item b { color: var(--gold-bright); }
+
+    .modal-body b.atendimento { color: #fff; border-bottom: 2px solid var(--accent); }
 
     /* Botões */
-    .actions { display: flex; flex-direction: column; gap: 15px; }
+    .actions { display: flex; flex-direction: column; gap: 12px; }
 
     .btn {
-      padding: 22px;
+      padding: 20px;
       border-radius: 15px;
       text-decoration: none;
       font-weight: 900;
-      font-size: 1.1rem;
+      font-size: 1rem;
       text-transform: uppercase;
       letter-spacing: 1px;
       transition: 0.3s;
@@ -188,27 +208,35 @@
   <div id="splash-core">
     <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgIVywerTEx7Qorio908b4OTVv3x2yo2lPl38CVdhCxtJOK23tK_pRTy8-hcSIWtNLZ6ifuzf8WhXOmFqBkr2aOqR78JmGc_Wc5uRLHtLUAYenxGd26uMjEg5E0bMKp03cqXDwXuJ7yA_0LXYoUxIn6ye7Vn6Q5CnTv-oPnLAMz58zVaijoADv3cRQM5T3L/s1600/20250614_012036.png" class="logo-main" alt="Pizzaria Vetorelli">
     <div class="title-wrap">
-      <h1 class="festas-title">JANEIRO 2026</h1>
+      <h1 class="festas-title">TEMPORADA 2026</h1>
     </div>
   </div>
 
   <div id="welcome-modal">
-    <span class="sub-head">Bem-vindo a</span>
-    <div class="modal-head">UM NOVO ANO!</div>
-    <p class="modal-body">
-      Comece 2026 com a melhor pizza da região.<br><br>
-      Já estamos a todo vapor com nosso <b>atendimento normalizado</b> e o cardápio completo disponível para você!
-    </p>
+    <span class="sub-head">Seja bem-vindo</span>
+    <div class="modal-head">UM NOVO ANO DE SABOR!</div>
+    
+    <div class="modal-body">
+      Iniciamos 2026 com <b class="atendimento">atendimento normalizado</b> e lançamentos exclusivos que você precisa provar:
+      
+      <div class="highlight-box">
+          <span class="highlight-item">🍕 <b>LIBANESE:</b> Mussarela, Zatar e Tomate.</span>
+          <span class="highlight-item">🍕 <b>PEPERONNI 2:</b> Com dobro de sabor e Catupiry.</span>
+          <span class="highlight-item">🍫 <b>OVOMALTINE:</b> Com Ovomaltine Rocks Crocante.</span>
+      </div>
+      
+      O forno já está quente e esperando por você!
+    </div>
     
     <div class="actions">
-      <a href="Cardapio.html" class="btn btn-primary">Fazer meu Pedido</a>
-      <a href="https://wa.me/5511993407322" target="_blank" class="btn btn-secondary">WhatsApp</a>
+      <a href="Cardapio.html" class="btn btn-primary">Ver Cardápio Completo</a>
+      <a href="https://wa.me/5511993407322" target="_blank" class="btn btn-secondary">WhatsApp Direto</a>
     </div>
   </div>
 
   <script>
     window.onload = function() {
-      // Splash de 3 segundos antes do modal
+      // Splash reduzido para 2.5 segundos para ser mais dinâmico
       setTimeout(() => {
         const splash = document.getElementById('splash-core');
         const modal = document.getElementById('welcome-modal');
@@ -219,9 +247,9 @@
         
         setTimeout(() => {
           modal.classList.add('show');
-        }, 500);
+        }, 400);
 
-      }, 3000); 
+      }, 2500); 
     };
 
     function animateBokeh() {
