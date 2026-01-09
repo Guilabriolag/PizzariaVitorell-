@@ -5,7 +5,7 @@ const sabores = [
     { n: "Calabresa 1", d: "Molho, Calabresa, Cebola, Azeitona e Orégano", g: 39, b: 29 },
     { n: "Calabresa 2", d: "Molho, Mussarela, calabresa, Cebola, Azeitona e Orégano", g: 44, b: 34 },
     { n: "Calabresa 3", d: "Molho, Calabresa, Pimentão, parmesão, Azeitona e Orégano", g: 43, b: 33 },
-    { n: "Calapy", d: "Molho, Catupiry, Calabresa, Cebola, Azeitona e Orégano", g: 44, b: 34 },
+    { n: "Calapiry", d: "Molho, Catupiry, Calabresa, Cebola, Azeitona e Orégano", g: 44, b: 34 },
     { n: "Cabrovo pepe", d: "Molho, Calabresa, Ovo, Cebola, Parmesão, Pimenta Calabresa, Azeitona e Orégano", g: 45, b: 35 },
     { n: "Baiana", d: "Molho, Mussarela, calabresa desfiada, cebola, ovo, pimenta calabresa, azeitona e Orégano", g: 47, b: 37 },
     { n: "Quatro Queijos", d: "Molho, Mussarela, Parmesão, Provolone e Gorgonzola", g: 48, b: 38 },
@@ -15,11 +15,15 @@ const sabores = [
     { n: "Alho", d: "Molho, Mussarela e Alho frito", g: 45, b: 35 },
     { n: "Aliche", d: "Molho, Mussarela, Aliche e Tomate", g: 49, b: 39 },
     { n: "Americana", d: "Molho, Mussarela, Lombinho, Pimentão, Champignon e Tomate cereja", g: 50, b: 40 },
-    { n: "Atum 1", d: "Molho, Atum e Cebola", g: 46, b: 36 },
-    { n: "Atum 2", d: "Molho, Mussarela, Atum e Cebola", g: 48, b: 38 },
-    { n: "Bacon", d: "Molho, Mussarela e Bacon", g: 45, b: 35 },
+    { n: "Atum 1", d: "Molho, Atum, Cebola, Oregano e Azeitonas", g: 46, b: 36 },
+    { n: "Atum 2", d: "Molho, Mussarela, Atum, Cebola, Oregano e Azeitonas", g: 48, b: 38 },
+    { n: "Atum 3", d: "Molho, Catupiry, Atum, Cebola, Oregano e Azeitonas", g: 49, b: 39 },
+    { n: "Bacon", d: "Molho, Mussarela e Bacon", g: 46, b: 36 },
+    { n: "Bacon 2", d: "Molho, Mussarela, Bacon, Tomate cereja, Alho, Oregano e Azeitonas", g: 48, b: 38 },
     { n: "Frango Catupiry", d: "Molho, Frango e Catupiry", g: 47, b: 37 },
+    { n: "Frango Bacon", d: "Molho, Frango, Catupiry, Bacon, Oregano e Azeitonas", g: 47, b: 37 },
     { n: "Gênova", d: "Molho, Mussarela, Provolone, Presunto e Molho Pesto", g: 48, b: 38 },
+    { n: "Gênova 2 ", d: "Molho, Mussarela, Lombinho, Provolone, Presunto, Molho Pesto, Oregano e Azeitonas ", g: 48, b: 38 },
     { n: "Lombinho", d: "Molho, Mussarela, Lombinho e Provolone", g: 47, b: 37 },
     { n: "Peperonni 1", d: "Molho, Mussarela, Peperonni e azeitona", g: 50, b: 40 },
     { n: "Peperonni 2", d: "Molho, Mussarela, Peperonni, Catupiry, azeitona", g: 55, b: 45 },
@@ -37,7 +41,8 @@ const sabores = [
     { n: "Palmitôsa", d: "Molho, Mussarela, Palmito, Catupiry, Azeitona e Orégano", g: 50, b: 40 },
     { n: "Portuguesa", d: "Molho, Mussarela, presunto, ovo, ervilha, tomate, cebola e azeitona", g: 50, b: 40 },
     { n: "Rúcula", d: "Molho, Mussarela, Rúcula e Tomate Seco", g: 47, b: 37 },
-    { n: "Toscana", d: "Molho, Mussarela, Linguiça calabresa moída e Tomate", g: 45, b: 35 }
+    { n: "Toscana", d: "Molho, Mussarela, Linguiça calabresa desfiada e Tomate", g: 45, b: 35 },
+    { n: "Toscana 2", d: "Molho, Mussarela, Linguiça calabresa desfiada, Provolone, Alecrim, Cebola, oregano e azeitonas", g: 47, b: 37 },
 ];
 
 const bebidas = [
