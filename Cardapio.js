@@ -133,7 +133,7 @@ function enviarPedido() {
     const pag = document.getElementById('pagamento').value;
     if(!itens || !pag) return showCustomAlert("ATENÇÃO", "Preencha itens e pagamento!");
     let local = document.getElementById('entregaCampos').style.display === 'block' ? `Delivery: ${document.getElementById('endereco').value} - ${document.getElementById('bairro').value}` : "Retirada Balcão";
-    window.open(`https://wa.me/5511993407322?text=${encodeURIComponent("*PEDIDO VETORELLI*\n\n"+itens+"\n📍 "+local+"\n💳 Pagamento: "+pag)}`);
+    window.open(`https://wa.me/5511993407322?text=${encodeURIComponent("*PEDIDO VITORELLI*\n\n"+itens+"\n📍 "+local+"\n💳 Pagamento: "+pag)}`);
 }
 
 function showCustomAlert(t, m) { document.getElementById('custom-alert-title').innerText = t; document.getElementById('custom-alert-message').innerText = m; document.getElementById('custom-alert-overlay').style.display = 'flex'; }
