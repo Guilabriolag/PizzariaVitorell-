@@ -12,20 +12,20 @@ const sabores = [
     { n: "Cinco Queijos", d: "Molho, Mussarela, Parmesão, Provolone, Gorgonzola e Catupiry", g: 50, b: 40 },
     { n: "Abobrinha 1", d: "Molho, Mussarela, Abobrinha, Alho Frito e Orégano", g: 41, b: 31 },
     { n: "Abobrinha 2", d: "Molho, Mussarela, Abobrinha, Pimenta Calabresa e Orégano", g: 41, b: 31 },
-    { n: "Alho", d: "Molho, Mussarela e Alho frito", g: 45, b: 35 },
+    { n: "Alho", d: "Molho, Mussarela e Alho frito", g: 43, b: 33 },
     { n: "Aliche", d: "Molho, Mussarela, Aliche e Tomate", g: 49, b: 39 },
     { n: "Aliche 2", d: "Molho, Mussarela, Aliche e Cheiro Verde", g: 50, b: 40 },
-    { n: "Americana", d: "Molho, Mussarela, Lombinho, Pimentão, Champignon e Tomate cereja", g: 50, b: 40 },
-    { n: "Atum 1", d: "Molho, Atum, Cebola, Oregano e Azeitonas", g: 46, b: 36 },
-    { n: "Atum 2", d: "Molho, Mussarela, Atum, Cebola, Oregano e Azeitonas", g: 48, b: 38 },
+    { n: "Americana", d: "Molho, Mussarela, Lombinho, Pimentão, Champignon e Tomate cereja", g: 52, b: 42 },
+    { n: "Atum 1", d: "Molho, Atum, Cebola, Oregano e Azeitonas", g: 47, b: 37 },
+    { n: "Atum 2", d: "Molho, Mussarela, Atum, Cebola, Oregano e Azeitonas", g: 49, b: 39 },
     { n: "Atum 3", d: "Molho, Catupiry, Atum, Cebola, Oregano e Azeitonas", g: 49, b: 39 },
     { n: "Bacon", d: "Molho, Mussarela e Bacon", g: 46, b: 36 },
     { n: "Bacon 2", d: "Molho, Mussarela, Bacon, Tomate cereja, Alho, Oregano e Azeitonas", g: 48, b: 38 },
-    { n: "Frango Catupiry", d: "Molho, Frango e Catupiry", g: 47, b: 37 },
-    { n: "Frango Bacon", d: "Molho, Frango, Catupiry, Bacon, Oregano e Azeitonas", g: 47, b: 37 },
-    { n: "Gênova", d: "Molho, Mussarela, Provolone, Presunto e Molho Pesto", g: 48, b: 38 },
-    { n: "Gênova 2 ", d: "Molho, Mussarela, Lombinho, Provolone, Presunto, Molho Pesto, Oregano e Azeitonas ", g: 48, b: 38 },
-    { n: "Lombinho", d: "Molho, Mussarela, Lombinho e Provolone", g: 47, b: 37 },
+    { n: "Frango Catupiry", d: "Molho, Frango e Catupiry", g: 49, b: 39 },
+    { n: "Frango Bacon", d: "Molho, Frango, Catupiry, Bacon, Oregano e Azeitonas", g: 50, b: 40 },
+    { n: "Gênova", d: "Molho, Mussarela, Provolone, Presunto e Molho Pesto", g: 49, b: 39 },
+    { n: "Gênova 2 ", d: "Molho, Mussarela, Lombinho, Provolone, Presunto, Molho Pesto, Oregano e Azeitonas ", g: 49, b: 39 },
+    { n: "Lombinho", d: "Molho, Mussarela, Lombinho e Provolone", g: 48, b: 38 },
     { n: "Peperonni 1", d: "Molho, Mussarela, Peperonni e azeitona", g: 50, b: 40 },
     { n: "Peperonni 2", d: "Molho, Mussarela, Peperonni, Catupiry, azeitona", g: 55, b: 45 },
     { n: "Romana", d: "Molho, Mussarela, Aliche e Tomate", g: 50, b: 40 },
@@ -43,8 +43,10 @@ const sabores = [
     { n: "Potatôsa", d: "Molho, Batata, Parmesão, Calabresa, Catupiry, Azeitona e Orégano", g: 46, b: 36 },
     { n: "Potatôsa 2", d: "Molho, Batata, Parmesão, Bacon, Catupiry, Azeitona e Orégano", g: 46, b: 36 },
     { n: "Portuguesa", d: "Molho, Mussarela, presunto, ovo, ervilha, tomate, cebola e azeitona", g: 50, b: 40 },
-    { n: "Rúcula", d: "Molho, Mussarela, Rúcula e Tomate Seco", g: 47, b: 37 },
-    { n: "Toscana", d: "Molho, Mussarela, Linguiça calabresa desfiada e Tomate", g: 45, b: 35 },
+    { n: "Pomodoro", d: "Molho, Parmesão, Alho frito, Tomate, Oregano e azeitona", g: 45, b: 35 },
+    { n: "Rúcula & Tomate Seco", d: "Molho, Mussarela, Rúcula e Tomate Seco", g: 47, b: 37 },
+    { n: "Escarola", d: "Molho, Mussarela, Escarola, Alho, Parmesão, Oregano e Azeitonas ", g: 47, b: 37 },
+    { n: "Toscana", d: "Molho, Mussarela, Linguiça calabresa desfiada e Tomate", g: 46, b: 36 },
     { n: "Toscana 2", d: "Molho, Mussarela, Linguiça calabresa desfiada, Provolone, Alecrim, Cebola, oregano e azeitonas", g: 47, b: 37 },
 ];
 
@@ -52,7 +54,7 @@ const bebidas = [
     { n: "Coca-Cola 2L", d: "Refrigerante", p: 18 },
     { n: "Coca-Cola Zero 2L", d: "Refrigerante", p: 18 },
     { n: "Guaraná Kuat 2L", d: "Refrigerante", p: 12 },
-    { n: "HEINEKEN (Lata)", d: "Cerveja", p: 10 }
+    { n: "HEINEKEN (Lata)", d: "Cerveja", p: 8 }
 ];
 
 let catAtual = 'pizza';
