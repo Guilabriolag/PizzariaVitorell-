@@ -53,7 +53,6 @@ const sabores = [
 const bebidas = [
     { n: "Coca-Cola 2L", d: "Refrigerante", p: 18 },
     { n: "Coca-Cola Zero 2L", d: "Refrigerante", p: 18 },
-    { n: "Guaraná Kuat 2L", d: "Refrigerante", p: 12 },
     { n: "Guaraná Antartica 2L", d: "Refrigerante", p: 16 },
     { n: "HEINEKEN (Lata)", d: "Cerveja", p: 8 }
 ];
