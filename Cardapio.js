@@ -39,7 +39,7 @@ const sabores = [
     { n: "Marguerita", d: "Molho, Mussarela, Parmesão Tomate, Manjericão Azeitona e Orégano", g: 41, b: 31 },
     { n: "Marguerita Pesto", d: "Molho, Mussarela, Parmesão Tomate, Molho Pesto Azeitona e Orégano", g: 42, b: 31 },
     { n: "Marguedôro", d: "Molho, Mussarela, Parmesão, Tomate, manjericão, Azeitona, alho e Orégano", g: 42, b: 32 },
-    { n: "Palmitôsa", d: "Molho, Mussarela, Palmito, Catupiry, Azeitona e Orégano", g: 50, b: 40 },
+    { n: "Palmitôsa", d: "Molho, Palmito, Parmesão, Calabresa, Catupiry, Azeitona e Orégano", g: 46, b: 36 },
     { n: "Potatôsa", d: "Molho, Batata, Parmesão, Calabresa, Catupiry, Azeitona e Orégano", g: 46, b: 36 },
     { n: "Potatôsa 2", d: "Molho, Batata, Parmesão, Bacon, Catupiry, Azeitona e Orégano", g: 46, b: 36 },
     { n: "Portuguesa", d: "Molho, Mussarela, presunto, ovo, ervilha, tomate, cebola e azeitona", g: 50, b: 40 },
@@ -54,6 +54,7 @@ const bebidas = [
     { n: "Coca-Cola 2L", d: "Refrigerante", p: 18 },
     { n: "Coca-Cola Zero 2L", d: "Refrigerante", p: 18 },
     { n: "Guaraná Kuat 2L", d: "Refrigerante", p: 12 },
+    { n: "Guaraná Antartica 2L", d: "Refrigerante", p: 16 },
     { n: "HEINEKEN (Lata)", d: "Cerveja", p: 8 }
 ];
 
