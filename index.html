@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Pizzaria Vetorelli • Março Especial</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Montserrat:wght@300;500;700;900&display=swap" rel="stylesheet">
+
+  <style>
+    /* ========================
+       TEMA • MÊS DA MULHER
+    ========================= */
+    :root {
+      --purple-main: #7b2cbf;
+      --purple-soft: #9d4edd;
+      --purple-dark: #3c096c;
+      --gold: #f5d98f;
+      --pink-accent: #ff85c1;
+      --white: #ffffff;
+      --bg-dark: #140021;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      font-family: 'Montserrat', sans-serif;
+      background: var(--bg-dark);
+      color: var(--white);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    /* ========================
+       BACKGROUND
+    ========================= */
+    .hero-bg {
+      position: fixed;
+      inset: 0;
+      background:
+        linear-gradient(rgba(20,0,33,.85), rgba(60,9,108,.9)),
+        url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgtlAIqbNWtq6dQL3X3N_TgGBe8Eul0udZm-YlzXxTFbkbo3sBrpMm6RJ3Pm76fv5PV7rgEGEYSkA_1l_8bJ6AA-YnRZWrtHW1m1PjLsH_Wpjb-FCto68f_a-bJc-sysKvbkXIkASwWP6N3PffP1QDwRY97RHrYiFj_cD2O1MorFgqpYwojgAZeks8pws0O/s2400/20250927_014811.jpg');
+      background-size: cover;
+      background-position: center;
+      animation: bgZoom 14s infinite alternate ease-in-out;
+      z-index: -2;
+    }
+
+    @keyframes bgZoom {
+      from { transform: scale(1.05); }
+      to   { transform: scale(1.12); }
+    }
+
+    /* ========================
+       CONTAINER
+    ========================= */
+    .app {
+      width: 100%;
+      max-width: 420px;
+      padding: 30px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 24px;
+      z-index: 5;
+    }
+
+    /* ========================
+       LOGO
+    ========================= */
+    #splash-core {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      transition: .9s ease;
+    }
+
+    .logo-main {
+      width: 200px;
+      max-width: 70vw;
+      filter: drop-shadow(0 0 25px var(--purple-soft));
+      animation: logoFloat 3s infinite ease-in-out;
+    }
+
+    @keyframes logoFloat {
+      0%,100% { transform: translateY(0); }
+      50%     { transform: translateY(-10px); }
+    }
+
+    .festas-title {
+      font-family: 'Cinzel', serif;
+      font-size: 2.1rem;
+      font-weight: 900;
+      letter-spacing: 4px;
+      background: linear-gradient(45deg, var(--gold), var(--pink-accent), var(--purple-soft));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 0 0 18px rgba(255,133,193,.5);
+    }
+
+    /* ========================
+       MODAL
+    ========================= */
+    #welcome-modal {
+      width: 100%;
+      background: rgba(60,9,108,.85);
+      backdrop-filter: blur(18px);
+      border-radius: 32px;
+      padding: 32px 24px;
+      border: 2px solid var(--purple-soft);
+      box-shadow: 0 0 40px rgba(157,78,221,.35);
+      opacity: 0;
+      transform: translateY(40px) scale(.95);
+      transition: .7s cubic-bezier(.175,.885,.32,1.2);
+      pointer-events: none;
+    }
+
+    #welcome-modal.show {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+      pointer-events: auto;
+    }
+
+    .sub-head {
+      font-family: 'Cinzel', serif;
+      font-size: .9rem;
+      letter-spacing: 3px;
+      color: var(--pink-accent);
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      display: block;
+    }
+
+    .modal-head {
+      font-size: 1.7rem;
+      font-weight: 900;
+      margin-bottom: 14px;
+    }
+
+    .modal-body {
+      font-size: .95rem;
+      line-height: 1.6;
+      color: #f1e9ff;
+    }
+
+    .modal-body b {
+      color: var(--gold);
+    }
+
+    /* ========================
+       BOTÕES
+    ========================= */
+    .actions {
+      margin-top: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .btn {
+      padding: 18px;
+      border-radius: 50px;
+      font-weight: 900;
+      font-size: 1rem;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: .3s ease;
+    }
+
+    .btn-primary {
+      background: linear-gradient(45deg, var(--pink-accent), var(--purple-soft));
+      color: #200030;
+      box-shadow: 0 8px 22px rgba(157,78,221,.45);
+    }
+
+    .btn-primary:hover {
+      transform: scale(1.05);
+    }
+
+    .btn-secondary {
+      border: 2px solid var(--gold);
+      color: var(--white);
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="hero-bg"></div>
+
+  <main class="app">
+
+    <!-- SPLASH -->
+    <section id="splash-core">
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgIVywerTEx7Qorio908b4OTVv3x2yo2lPl38CVdhCxtJOK23tK_pRTy8-hcSIWtNLZ6ifuzf8WhXOmFqBkr2aOqR78JmGc_Wc5uRLHtLUAYenxGd26uMjEg5E0bMKp03cqXDwXuJ7yA_0LXYoUxIn6ye7Vn6Q5CnTv-oPnLAMz58zVaijoADv3cRQM5T3L/s1600/20250614_012036.png"
+           alt="Pizzaria Vetorelli"
+           class="logo-main">
+
+      <h1 class="festas-title">MARÇO • MÊS DA MULHER</h1>
+    </section>
+
+    <!-- MODAL -->
+    <section id="welcome-modal">
+      <span class="sub-head">Celebração Especial</span>
+      <div class="modal-head">SABOR QUE HOMENAGEIA ELAS</div>
+
+      <p class="modal-body">
+        Março é o mês de reconhecer a força, a elegância e a determinação feminina 🌷
+        <br><br>
+        Em homenagem ao <b>Dia Internacional da Mulher – 8 de Março</b>,
+        preparamos uma campanha especial dedicada a todas que inspiram o mundo todos os dias.
+        <br><br>
+        Estamos atendendo normalmente. Celebre com sabor.
+      </p>
+
+      <div class="actions">
+        <a href="Cardapio.html" class="btn btn-primary">🍕 Pedir Agora</a>
+        <a href="https://wa.me/5511993407322" class="btn btn-secondary">WhatsApp</a>
+      </div>
+    </section>
+
+  </main>
+
+  <script>
+    window.onload = () => {
+      setTimeout(() => {
+        document.getElementById('splash-core').style.opacity = .25;
+        document.getElementById('splash-core').style.transform = 'translateY(-120px) scale(.75)';
+        setTimeout(() => {
+          document.getElementById('welcome-modal').classList.add('show');
+        }, 350);
+      }, 2400);
+    };
+  </script>
+
+</body>
+</html>
