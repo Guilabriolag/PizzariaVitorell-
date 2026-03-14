@@ -24,7 +24,7 @@ const sabores = [
     { n: "Frango Catupiry", d: "Molho, Frango e Catupiry", g: 49, b: 39 },
     { n: "Frango Bacon", d: "Molho, Frango, Catupiry, Bacon, Oregano e Azeitonas", g: 50, b: 40 },
     { n: "Gênova", d: "Molho, Mussarela, Provolone, Presunto e Molho Pesto", g: 49, b: 39 },
-    { n: "Gênova 2 ", d: "Molho, Mussarela, Lombinho, Provolone, Presunto, Molho Pesto, Oregano e Azeitonas ", g: 49, b: 39 },
+    { n: "Gênova 2 ", d: "Molho, Mussarela, Lombinho, Provolone,  Molho Pesto, Oregano e Azeitonas ", g: 49, b: 39 },
     { n: "Lombinho", d: "Molho, Mussarela, Lombinho e Provolone", g: 48, b: 38 },
     { n: "Peperonni 1", d: "Molho, Mussarela, Peperonni e azeitona", g: 50, b: 40 },
     { n: "Peperonni 2", d: "Molho, Mussarela, Peperonni, Catupiry, azeitona", g: 55, b: 45 },
