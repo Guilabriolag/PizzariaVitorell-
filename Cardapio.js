@@ -1,5 +1,4 @@
-const sabores = [
-   
+const sabores = [ 
     { n: "Mussarela", d: "Molho, Mussarela, Tomate, Azeitona e Orégano", g: 42, b: 30 },
     { n: "Mussapy", d: "Molho, Mussarela, Tomate, Catupiry, orégano e azeitona", g: 48, b: 35 },
     { n: "Calabresa 1", d: "Molho, Calabresa, Cebola, Azeitona e Orégano", g: 42, b: 30 },
