@@ -1,6 +1,6 @@
 const sabores = [
     { n: "Mussarela Especial", d: "Molho, Mussarela, Tomate Seco, Parmesão e Pimenta Calabresa", g: 43, b: 33 },
-    { n: "Mussarela", d: "Molho, Mussarela, Tomate, Azeitona e Orégano", g: 39, b: 29 },
+    { n: "Mussarela", d: "Molho, Mussarela, Tomate, Azeitona e Orégano", g: 42, b: 30 },
     { n: "Mussapy", d: "Molho, Mussarela, Tomate, Catupiry, orégano e azeitona", g: 45, b: 35 },
     { n: "Calabresa 1", d: "Molho, Calabresa, Cebola, Azeitona e Orégano", g: 39, b: 29 },
     { n: "Calabresa 2", d: "Molho, Mussarela, calabresa, Cebola, Azeitona e Orégano", g: 44, b: 34 },
