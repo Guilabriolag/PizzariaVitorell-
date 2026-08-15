@@ -38,7 +38,7 @@ const sabores = [
     { n: "Marguedôro", d: "Molho, Mussarela, Parmesão, Tomate, manjericão, Azeitona, alho e Orégano", g: 45, b: 32 },
     { n: "Potatôsa", d: "Molho, Batata, Parmesão, Calabresa, Catupiry, Azeitona e Orégano", g: 50, b: 36 },
     { n: "Potatôsa 2", d: "Molho, Batata, Parmesão, Bacon, Catupiry, Azeitona e Orégano", g: 51, b: 36 },
-    { n: "Portuguesa", d: "Molho, Mussarela, presunto, ovo, ervilha, tomate, cebola e azeitona", g: 54, b: 40 },
+    { n: "Portuguesa", d: "Molho, Mussarela, presunto, ovo, ervilha, tomate, orégano e azeitona", g: 54, b: 40 },
     { n: "Pomodoro", d: "Molho, Parmesão, Alho frito, Tomate, Oregano e azeitona", g: 49, b: 35 },
     { n: "Rúcula & Tomate Seco", d: "Molho, Mussarela, Rúcula e Tomate Seco", g: 50, b: 37 },
     { n: "Escarola", d: "Molho, Mussarela, Escarola, Alho, Parmesão, Oregano e Azeitonas ", g: 47, b: 37 },
